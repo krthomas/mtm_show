@@ -1,10 +1,11 @@
-<h1>Listing reviews</h1>
+<h1>All Reviews</h1>
 
 <table>
   <tr>
-    <th>Reviewer name</th>
+    <th>Reviewer Name</th>
     <th>Content</th>
-    <th>Episode</th>
+    <th>Episode Season/Number</th>
+    <th>Episode Title</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,7 +15,8 @@
   <tr>
     <td><%= review.reviewer_name %></td>
     <td><%= review.content %></td>
-    <td><%= review.episode_id %></td>
+    <td>S:<%= (Episode.find(review.episode_id)).season %>/Ep:<%= (Episode.find(review.episode_id)).episode_number %></td>
+    <td><%= (Episode.find(review.episode_id)).title %></td>
     <td><%= link_to 'Show', review %></td>
     <td><%= link_to 'Edit', edit_review_path(review) %></td>
     <td><%= link_to 'Destroy', review, :confirm => 'Are you sure?', :method => :delete %></td>

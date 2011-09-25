@@ -32,4 +32,15 @@ describe Episode do
     episode_with_duplicate_season_and_episodenumber.should_not be_valid
   end
 
+  describe "review associations" do
+
+    before(:each) do
+      @episode = Episode.create(@attr)
+    end
+
+    it "should have a review attribute" do
+      @episode.should respond_to(:reviews)
+    end
+  end
+
 end

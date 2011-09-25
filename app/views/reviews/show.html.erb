@@ -1,18 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Reviewer Name:</b>
-  <%= @review.reviewer_name %>
+  <b><%= @review.reviewer_name %> says:</b>
 </p>
-
 <p>
-  <b>Content:</b>
   <%= @review.content %>
 </p>
 
 <p>
   <b>Episode:</b>
-  <%= @review.episode_id %>
+  </br>
+  S:<%= (Episode.find(@review.episode_id)).season %>/Ep:<%= (Episode.find(@review.episode_id)).episode_number %>,
+  <%= (Episode.find(@review.episode_id)).title %>
 </p>
 
 

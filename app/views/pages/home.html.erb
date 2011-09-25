@@ -4,6 +4,17 @@
   This is the home page for the MTM Review Page.
 </p>
 
-<%= link_to "Add Episode", addepisode_path, :class => "addepisode_button round" %>
-<p></p>
-<%= link_to "Add Review", addreview_path, :class => "addreview_button round" %>
+<table border="1">
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><%= link_to "All Episodes", showepisodes_path, :class => "addepisode_button round" %></td>
+    <td><%= link_to "All Reviews", showreviews_path, :class => "addreview_button round" %></td>
+  </tr>
+  <tr>
+    <td><%= link_to "Add Episode", addepisode_path, :class => "addepisode_button round" %></td>
+    <td><%= link_to "Add Review", addreview_path, :class => "addreview_button round" %></td>
+  </tr>
+</table>

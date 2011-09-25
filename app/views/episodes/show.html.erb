@@ -21,19 +21,38 @@
 </p>
 
 <p>
-  <b>Did mary date:</b>
+  <b>Did Mary have a date in this episode?:</b>
   <%= @episode.did_mary_date %>
 </p>
 
 <p>
-  <b>Dates name:</b>
+  <b>Her date's name was:</b>
   <%= @episode.dates_name %>
 </p>
 
 <p>
-  <b>Dates hair color:</b>
+  <b>The date's hair color was:</b>
   <%= @episode.dates_hair_color %>
 </p>
+
+<table class="profile">
+  <tr>
+    <td class="main">
+      <% unless @episode.reviews.empty? %>
+        <table class="reviews" summary="Episode reviews">
+          <%= render @reviews %>
+        </table>
+        <%= will_paginate @reviews %>
+      <% end %>
+    </td>
+    <td class="sidebar round">
+      <strong>Reviews</strong> <%= @episode.reviews.count %>
+    </td>
+  </tr>
+</table>
+
+
+
 
 
 <%= link_to 'Edit', edit_episode_path(@episode) %> |

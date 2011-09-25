@@ -5,6 +5,7 @@ MtmShow::Application.routes.draw do
   match '/addepisode',  :to => 'episodes#new'
   match '/addreview',  :to => 'reviews#new'
   match '/showreviews',  :to => 'reviews#index'
+  match '/showepisodes',  :to => 'episodes#index'
 
   match '/about',   :to => 'pages#about'
 

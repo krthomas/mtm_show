@@ -7,4 +7,6 @@ class Episode < ActiveRecord::Base
 
   has_many :reviews
 
+  default_scope :order => 'episodes.season ASC'
+
 end

@@ -12,20 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :season %><br />
+    <%= f.label :season %>*<br />
     <%= f.text_field :season %>
   </div>
   <div class="field">
-    <%= f.label :episode_number %><br />
+    <%= f.label :episode_number %>*<br />
     <%= f.text_field :episode_number %>
   </div>
   <div class="field">
-    <%= f.label :title %><br />
+    <%= f.label :title %>*<br />
     <%= f.text_field :title %>
   </div>
   <div class="field">
     <%= f.label :protagonist %><br />
-    <%= f.text_field :protagonist %>
+    <%= f.select(:protagonist, %w(Mary Murray Lou Ted Rhoda SueAnn Georgette Phyllis Other)) %>
   </div>
   <div class="field">
     <%= f.label :did_mary_date %><br />

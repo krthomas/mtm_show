@@ -1,0 +1,35 @@
+<h1>Listing episodes</h1>
+
+<table>
+  <tr>
+    <th>Season</th>
+    <th>Episode number</th>
+    <th>Title</th>
+    <th>Protagonist</th>
+    <th>Did mary date</th>
+    <th>Dates name</th>
+    <th>Dates hair color</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @episodes.each do |episode| %>
+  <tr>
+    <td><%= episode.season %></td>
+    <td><%= episode.episode_number %></td>
+    <td><%= episode.title %></td>
+    <td><%= episode.protagonist %></td>
+    <td><%= episode.did_mary_date %></td>
+    <td><%= episode.dates_name %></td>
+    <td><%= episode.dates_hair_color %></td>
+    <td><%= link_to 'Show', episode %></td>
+    <td><%= link_to 'Edit', edit_episode_path(episode) %></td>
+    <td><%= link_to 'Destroy', episode, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Episode', new_episode_path %>

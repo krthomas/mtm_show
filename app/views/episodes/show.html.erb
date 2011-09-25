@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Season:</b>
+  <%= @episode.season %>
+</p>
+
+<p>
+  <b>Episode number:</b>
+  <%= @episode.episode_number %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @episode.title %>
+</p>
+
+<p>
+  <b>Protagonist:</b>
+  <%= @episode.protagonist %>
+</p>
+
+<p>
+  <b>Did mary date:</b>
+  <%= @episode.did_mary_date %>
+</p>
+
+<p>
+  <b>Dates name:</b>
+  <%= @episode.dates_name %>
+</p>
+
+<p>
+  <b>Dates hair color:</b>
+  <%= @episode.dates_hair_color %>
+</p>
+
+
+<%= link_to 'Edit', edit_episode_path(@episode) %> |
+<%= link_to 'Back', episodes_path %>

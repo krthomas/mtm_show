@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  season: 1
+  episode_number: 1
+  title: MyString
+  protagonist: MyString
+  did_mary_date: false
+  dates_name: MyString
+  dates_hair_color: MyString
+
+two:
+  season: 1
+  episode_number: 1
+  title: MyString
+  protagonist: MyString
+  did_mary_date: false
+  dates_name: MyString
+  dates_hair_color: MyString

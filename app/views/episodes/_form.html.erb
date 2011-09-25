@@ -28,15 +28,15 @@
     <%= f.select(:protagonist, %w(Mary Murray Lou Ted Rhoda SueAnn Georgette Phyllis Other)) %>
   </div>
   <div class="field">
-    <%= f.label :did_mary_date %><br />
+    <%= f.label :did_mary_date, "Did Mary date someone in this episode?" %><br />
     <%= f.check_box :did_mary_date %>
   </div>
   <div class="field">
-    <%= f.label :dates_name %><br />
+    <%= f.label :dates_name, "If yes, what was the date's first name?'" %><br />
     <%= f.text_field :dates_name %>
   </div>
   <div class="field">
-    <%= f.label :dates_hair_color %><br />
+    <%= f.label :dates_hair_color, "What is his hair color?" %><br />
     <%= f.text_field :dates_hair_color %>
   </div>
   <div class="actions">

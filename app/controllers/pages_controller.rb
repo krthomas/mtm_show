@@ -7,4 +7,12 @@ class PagesController < ApplicationController
     @title = "About"
   end
 
+  def addepisode
+    @title = "Add Episode"
+  end
+
+  def addreview
+    @title = "Add Review"
+  end
+
 end

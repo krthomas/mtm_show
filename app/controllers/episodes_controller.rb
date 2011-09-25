@@ -3,7 +3,7 @@ class EpisodesController < ApplicationController
   # GET /episodes.xml
 
   def index
-    @title = "Episode Listing"
+    @title = "All Episodes"
     @episodes = Episode.all
 
     respond_to do |format|
@@ -15,6 +15,7 @@ class EpisodesController < ApplicationController
   # GET /episodes/1
   # GET /episodes/1.xml
   def show
+    @title = "Show Episode"
     @episode = Episode.find(params[:id])
 
     respond_to do |format|
@@ -26,6 +27,7 @@ class EpisodesController < ApplicationController
   # GET /episodes/new
   # GET /episodes/new.xml
   def new
+    @title = "Add Episode"
     @episode = Episode.new
 
     respond_to do |format|
@@ -36,6 +38,7 @@ class EpisodesController < ApplicationController
 
   # GET /episodes/1/edit
   def edit
+    @title = "Edit Episode"
     @episode = Episode.find(params[:id])
   end
 

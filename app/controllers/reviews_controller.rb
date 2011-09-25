@@ -2,6 +2,7 @@ class ReviewsController < ApplicationController
   # GET /reviews
   # GET /reviews.xml
   def index
+    @title = "All Reviews"
     @reviews = Review.all
 
     respond_to do |format|
@@ -13,6 +14,7 @@ class ReviewsController < ApplicationController
   # GET /reviews/1
   # GET /reviews/1.xml
   def show
+    @title = "Show Review"
     @review = Review.find(params[:id])
 
     respond_to do |format|
@@ -24,6 +26,7 @@ class ReviewsController < ApplicationController
   # GET /reviews/new
   # GET /reviews/new.xml
   def new
+    @title = "Add Review"
     @review = Review.new
 
     respond_to do |format|
@@ -34,6 +37,7 @@ class ReviewsController < ApplicationController
 
   # GET /reviews/1/edit
   def edit
+    @title = "Edit Review"
     @review = Review.find(params[:id])
   end
 

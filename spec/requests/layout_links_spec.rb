@@ -12,7 +12,7 @@ describe "LayoutLinks" do
     response.should have_selector('title', :content => "About")
   end
 
-  it "should have a add episode page at '/addepisode'" do
+  it "should have an Add episode page at '/addepisode'" do
     get '/addepisode'
     response.should have_selector('title', :content => "Add Episode")
   end

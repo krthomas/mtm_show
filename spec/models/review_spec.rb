@@ -1,16 +1,12 @@
 require 'spec_helper'
 
-describe Episode do
+describe Review do
 
   before(:each) do
-    @episode = Factory(:episode)
     @attr = { :content => "value for content" }
   end
 
-  it "should create a new instance given valid attributes" do
-    @episode.reviews.create!(@attr)
-  end
-
+=begin
   describe "episode associations" do
 
     before(:each) do
@@ -26,4 +22,5 @@ describe Episode do
       @review.episode.should == @episode
     end
   end
+=end
 end

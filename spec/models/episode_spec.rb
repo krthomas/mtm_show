@@ -25,13 +25,6 @@ describe Episode do
     no_title_episode.should_not be_valid
   end
 
-  it "should reject duplicate season&&episode_numbers" do
-    # Put a episode with given season and episode_number into the database.
-    Episode.create!(@attr)
-    episode_with_duplicate_season_and_episodenumber = Episode.new(@attr)
-    episode_with_duplicate_season_and_episodenumber.should_not be_valid
-  end
-
   describe "review associations" do
 
     before(:each) do

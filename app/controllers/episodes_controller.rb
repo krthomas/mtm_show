@@ -18,7 +18,6 @@ class EpisodesController < ApplicationController
     @title = "Show Episode"
     @episode = Episode.find(params[:id])
 
-    @episode = Episode.find(params[:id])
     @reviews = @episode.reviews.paginate(:page => params[:page])
 
     respond_to do |format|
@@ -88,4 +87,5 @@ class EpisodesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
 end

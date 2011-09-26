@@ -3,12 +3,13 @@
 <table>
   <tr>
     <th>Season</th>
-    <th>Episode Number</th>
+    <th>Ep #</th>
     <th>Title</th>
     <th>Protagonist</th>
     <th>Did Mary Date</th>
     <th>Date's Name</th>
     <th>Date's Hair Color</th>
+    <th>Ep ID</th>
     <th></th>
     <th></th>
     <th></th>
@@ -23,6 +24,7 @@
     <td><%= episode.did_mary_date %></td>
     <td><%= episode.dates_name %></td>
     <td><%= episode.dates_hair_color %></td>
+    <td><%= episode.id %></td>
     <td><%= link_to 'Reviews', episode %></td>
     <td><%= link_to 'Edit', edit_episode_path(episode) %></td>
     <td><%= link_to 'Destroy', episode, :confirm => 'Are you sure?', :method => :delete %></td>
